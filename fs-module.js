@@ -13,10 +13,10 @@ const fs = require('fs');
 //   console.log('dosya başarıyla oluşturuldu')
 // })
 
-// fs.appendFile('fsWrite.txt','\n KODLUYOR','utf8',(err,data)=>{
-//   if(err) console.log(err);
-//   console.log('dosyaya başarıyla ekleme yapıldı')
-// })
+ fs.appendFile('fsWrite.txt','\nKODLUYOR','utf8',(err,data)=>{
+   if(err) console.log(err);
+   console.log('dosyaya başarıyla ekleme yapıldı')
+ })
 
 // fs.unlink('fsPractice.txt',(err)=>console.log(err))
 
@@ -25,7 +25,7 @@ const fs = require('fs');
 //   console.log('klasör oluşturuldu');
 // })
 
-fs.rmdir('uploads',{recursive:true},(err)=>{
-  if(err) console.log(err);
-  console.log('klasör silindi');
-})
+//fs.rmdir('uploads',{recursive:true},(err)=>{
+//  if(err) console.log(err);
+//  console.log('klasör silindi');
+//})
